@@ -1,0 +1,165 @@
+/*VARIABLES*/
+/*PARTIALS*/
+header {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  font-size: 1.8rem;
+}
+
+.headerGrid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "foto enlaces" "foto enlaces";
+}
+.headerGrid .valhallaFlex {
+  display: flex;
+}
+.headerGrid .valhallaFlex .imagenValhalla {
+  width: 100px;
+  height: 100px;
+}
+.headerGrid .enlaces {
+  align-self: center;
+  list-style: none;
+}
+.headerGrid .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  list-style: none;
+}
+
+footer {
+  padding: 40px 0px 0px 0px;
+  background-color: white;
+}
+footer li {
+  list-style-type: none;
+  font-size: 19px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+footer .redSocial {
+  display: flex;
+  justify-content: space-around;
+}
+footer .redSocial .imagenSocial {
+  height: 50px;
+  width: 50px;
+}
+
+#mapa {
+  margin: 0px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0px 0px 30px 0px;
+  line-height: 40px;
+  font-family: "Bebas Neue";
+  color: black;
+}
+
+/*SECCIONES*/
+.cuerpo-tienda {
+  padding: 1px;
+}
+.cuerpo-tienda .tiendaFlex {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+  justify-items: center;
+  margin: 1rem;
+}
+.cuerpo-tienda .tiendaFlex .tiendaFlex__imagenTienda {
+  border: 10px solid black;
+  margin: 1rem;
+  height: 150px;
+  width: 200px;
+}
+.cuerpo-tienda .tiendaFlex .tiendaFlex__barra:hover {
+  border: solid black 5px;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  font-size: 1.4rem;
+}
+.cuerpo-tienda .tiendaFlex p {
+  font-size: 1.2rem;
+}
+
+.main-contacto #contacto__formulario {
+  margin: 0px 400px;
+  border: 5px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  background: linear-gradient(to bottom, #3A2449, #C9B7AD);
+}
+.main-contacto .contacto__formulario--titulo {
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  color: whitesmoke;
+  letter-spacing: 10px;
+}
+.main-contacto .contacto__formulario--form {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+body ol {
+  padding: 0px 0px 0px 50px;
+  margin: 10px;
+  font-style: italic;
+  list-style: none;
+}
+body ol .clases {
+  font-size: 20px;
+  font-weight: 900;
+  list-style: disc;
+  list-style-position: outside;
+  margin: 0px 0px 0px 50px;
+  padding: 0px;
+}
+
+.caja-1 {
+  background-color: #EAE0D5;
+  height: 50vh;
+  width: 20vw;
+  border: solid black 1px;
+  background-image: linear-gradient(to left, #22333B, #B27092);
+}
+
+.caja-2 {
+  background-color: #EAE0D5;
+  height: 50vh;
+  width: 20vw;
+  border: solid black 1px;
+  background-image: linear-gradient(to left, #22333B, #B27092);
+}
+
+.caja-3 {
+  background-color: #EAE0D5;
+  height: 50vh;
+  width: 20vw;
+  border: solid black 1px;
+  background-image: linear-gradient(to left, #22333B, #B27092);
+}
+
+.mons--silverMetallic {
+  background-color: #AAACB0;
+}
+
+.mons--liver {
+  background-color: #635255;
+}
+
+.mons--midnightGreenEagleGreen {
+  background-color: #004952;
+}
+
+/*# sourceMappingURL=index.css.map */

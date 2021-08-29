@@ -1,0 +1,21 @@
+@for $i from 1 through 3 {
+    .caja-#{$i}{background-color: #EAE0D5;
+        height: 50vh;
+        width: 20vw;
+        border: solid black 1px;
+        background-image: linear-gradient(to left, #22333B, #B27092);
+    }
+        
+    
+}
+$color:(
+    silverMetallic:#AAACB0,
+    liver:#635255,
+    midnightGreenEagleGreen:#004952,
+);
+@each $name-color,$monscolor in $color {
+    .mons--#{$name-color}{
+        background-color: $monscolor
+
+    }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <link rel="stylesheet" href="SeccionesCSS.css">
+    <link rel="stylesheet" href="Secciones/SeccionesCSS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../carpetacss/index.css">
+</head>
+<header class="headerGrid">
+    <div class="valhallaFlex">
+        <a href="../Secciones.html"><img class="imagenValhalla" src="../Imagenes/valhalla.jpg" alt=""></a>
+     </div>
+    <nav>
+        <ul class="navbar">
+            <li><a href="Tienda.html">Tienda</a></li>
+            <li><a href="Clases.html">Clases</a></li>
+            <li><a href="Galeria.html">Galeria</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>  
+        </ul> 
+    </nav>   
+</header>
+
+
+<body>
+    <main class="main-contacto">
+        <section class="container-xxl" id="contacto__formulario">
+            <h1 class="contacto__formulario--titulo">Escriba su consulta</h1>
+            <br>
+            <form class="contacto__formulario--form" action="INFOOK.html" method="POST">
+                <label class="negrita" for="UserName">Nombre completo:</label>
+                <input type="text" name="UserName" placeholder="Escriba su nombre">
+                <br>
+                <br>
+                <label class="negrita" for="email">Coreo Electronico: </label>
+                <input type="email" name="email" id="" placeholder="TuCorreo@web.com" >
+                <br>
+                <br>
+                <label class="negrita" for="Telefono">Numero de Telefono:</label>
+                <input type="number" name="Telefono"  placeholder="Telefono">
+                <br>
+                <br>
+                <h3>Seleccione su Sexo :</h3>
+                <fieldset style="width: 20%;">
+                    <legend>Seleccione una opcion</legend>
+                    <input type="radio" name="sexo" value="m">
+                    <label for="masculino">Maculino</label>
+                    <input type="radio" name="sexo" value="f">
+                    <label for="femenino">Femenino</label>
+                    
+                </fieldset>
+                <br>
+                <br>
+                <h4>Como nos conocio? :</h4>
+                <input type="checkbox" name="facebook">
+                <label for="facebook">Facebook</label>
+                <input type="checkbox" name="instagram">
+                <label for="instagram">Instagram</label>
+                <input type="checkbox" name="conocido">
+                <label for="conocido">Conocido/Amigo/Pariente</label>
+                <br>
+                <br>
+                
+                <label class="negrita" for="comment">Tu consulta :</label>
+                <br>
+                <br>
+                <textarea name="comment" id="" cols="30" rows="10"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Enviar">
+                <br>
+                <br>
+                <input type="reset">
+            </form>
+    
+        </section>
+    </main>
+    <footer class="footerGrid">
+        <section class="animate__animated animate__swing">
+            <div class="redSocial">
+                <a href=""><img class="imagenSocial" src="../Imagenes/facebook.png" alt=""></a>
+                <a href=""><img class="imagenSocial" src="../Imagenes/instagram.png" alt=""></a>
+            </div>
+        </section>
+        <nav id="mapa">
+            <a href="">Mapa</a>
+            <p>Fecha de hoy: DD/MM/AAAA</p>
+            <p>Email:Valhalla@correo.com</p>
+        </nav>
+        
+    </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+</body>
+</html>

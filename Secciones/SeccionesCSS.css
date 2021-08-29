@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: black !important;
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+    text-transform: uppercase;
+    animation: animate__pulse; 
+    
+}
+.dropdown{
+    color: black !important;
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+    text-transform: uppercase;
+    animation: animate__pulse;
+
+}
+.submenu{
+    position:absolute;
+    display: none;
+    background-color:#807182;
+    width: 160px;
+    height: 240px;
+    z-index: 3;
+}
+header nav ul ul li{
+    display: block;
+}
+nav ul li:hover ul{
+    display: block;
+}
+body a{
+    text-decoration: none;
+}
+
+
+/*Encabezado*/  
+
+
+/*CUERPO*/  
+.carousel{
+    margin: 20px;
+}
+main{
+    background-color:#F7F3F6;
+    font-size: 1.2rem;
+}
+.cuerpoInicial{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.mainGrid{
+    display: grid;
+    padding-left: 20px;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../Imagenes/barraCrossfit.jpg);
+    background-size: cover;
+    justify-content: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.parrafoInicial{
+    display: grid;
+    height: 400px;
+    width: 300px;
+    margin: auto;
+    align-content: center;
+}
+.spot{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    color:gray;
+    font-weight:900;
+    
+}
+.titulo {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.8rem;
+    color: beige;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 900;
+    background: linear-gradient(to left, black, gray)
+
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.containerBox{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-around;
+    gap: 50px;
+    margin-top: 100px;
+    text-align: center;
+    align-self: center;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-size: 20px;
+    justify-self: center;
+    padding: 20px;
+    
+}
+.containerCaja{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    
+}
+.mb-3{
+    color: black;
+    font-size: 18px;
+}
+.container{
+    font-size: 18px;
+}
+/*.caja-1{
+    background-color: #EAE0D5;
+    height: 50vh;
+    width: 20vw;
+    border: solid black 1px;
+    background-image: linear-gradient(to left, #22333B, #B27092);
+}
+.caja-2{
+    background-color: #f1dbc2;
+    height: 50vh;
+    width: 20vw;
+    border: solid black 1px;
+    background-image: linear-gradient(#22333B, #B27092);
+    
+}
+.caja-3{
+    background-color: #EAE0D5;
+    height: 50vh;
+    width: 20vw;
+    border: solid black 1px;
+    background-image: linear-gradient(to right, #22333B, #B27092);
+    
+}*/
+.lead{
+    color: white;
+    font-size: 1.25rem;
+}
+.formularioB{
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    border: solid 1px black;
+    padding: 10px;
+    color: black;
+    font-size: 1.8rem;
+}
+
+/*CUERPO*/
+
+/*PIE DE PAGINA*/
+
+
+/*CUERPO IMAGENES Y VIDESO*/
+
+
+
+
+/*CLASES*/
+th{
+    font-size: 20px;
+    
+}
+table{
+    margin: auto;
+    width: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(#22333B, #B27092);
+}
+.dh{
+    text-decoration:solid;
+    text-decoration: underline;
+    word-spacing: 40px;
+    text-transform: uppercase;
+    background-color: wheat;
+    display: inline-block;
+    margin: 0 450px;
+}
+td.negrita {
+    font-weight:900;
+    color: blueviolet;
+    text-align: center;
+    font-size: 20px;
+}
+body main table td ul li{
+    padding: 0px 0px 0px 10px;
+    margin: 10px;
+    list-style-position:inside;
+}
+
+/*GALERIA*/
+.imagenGaleria{
+    padding: 50px 0px 50px 0px; 
+    margin: auto;
+    height: 500px;
+    width: 500px;
+}
+.galeriaFlex{
+    display: flex;
+    flex-flow: row wrap;
+}
+.imagenGaleria:hover{
+    transform: scale(2,1);
+}
+/*GALERIA*/
+
+
+/*TABLET*/
+@media only screen and (max-width:768px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+    }
+    a{
+        font-size: 15px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+    }
+    .titulo{
+        font-size: 20px;
+
+    }
+    .lead{
+        font-size: 20px;
+
+    }
+    .formularioB{
+    }
+    .containerBox{
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    .cajaUno{
+        height: 30vh;
+        width: 100vw;
+        border: solid black 3px;
+        background-image: linear-gradient(to left, gray, beige);
+    }
+    .cajaTres{
+        height: 30vh;
+        width: 100vw;
+        border: solid black 3px;
+        background-image: linear-gradient(to left, gray, beige);
+    }
+}
+/*TABLET*/
+/*CELULAR*/
+@media only screen and (max-width:320px) {
+    .headerGrid, .footerGrid{
+        background-color: #C9ADA7;
+    }
+    a{
+        font-size: 12px;
+        color: black;
+        border: 1px solid black;
+    }
+    #imagenCrossfit{
+        height: 50vh;
+        width: 50vw;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .centrado, .subtitulo, .motivacion, .cursiva{
+        font-size: 12px;
+    }
+    .imagenValhalla{
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+
+
+    
+
+   
+
+
+
+
