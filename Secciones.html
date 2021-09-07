@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GIMNASIO | VALHALLA</title>
-    <link rel="stylesheet" href="Secciones/SeccionesCSS.css">
+    <link rel="stylesheet" href="secciones/seccionesCSS.css">
+    <link rel="stylesheet" href="carpetacss/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
@@ -29,7 +30,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="carpetacss/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    
     <style>
         /* Make the image fully responsive */
         .carousel-inner img {
@@ -37,23 +44,7 @@
             height: 100%;
         }
     </style>
-    <style> 
-        .imagenValhalla {
-          width: 100px;
-          height: 100px;
-          position: relative;
-          animation-name: example;
-          animation-duration: 4s;
-        }
-        
-        @keyframes example {
-          0%   {width: 120px;height: 120px; left:0px; top:0px;}
-          25%  {width: 140px;height: 140px; left:200px; top:0px;}
-          50%  {width: 145px;height: 145px; left:200px; top:200px;}
-          75%  {width: 150px;height: 150px; left:0px; top:200px;}
-          100% {width: 180px;height: 180px; left:0px; top:0px;}
-        }
-        </style>
+    
 </head>
 
 <body>
@@ -81,100 +72,92 @@
     </header>
     <!--ENCABEZADO-->
     <main>
-        <div class="cuerpoInicial">
-            <div class="mainGrid">
-                <article class="parrafoInicial">
+        
+        <div class="cuerpo-inicial">
+            <div class="main-grid">
+                <article class="parrafo-inicial">
                     <h1 class="titulo">valhalla||Crosstraining</h1>
-                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil cupiditate incidunt dolorem natus officiis. Aut harum sunt maxime explicabo commodi, debitis fugiat, accusamus corrupti officia rerum, voluptates molestias minima hic?</p>
+                    <p class="lead">En VALHALLA  entrenamos y acompañamos a personas de todas las edades y capacidades físicas a lo largo de todo su proceso de entrenamiento y los ayudamos a superar cualquier obstáculo ya sea físico o psicológico para poder lograr sus metas. Nuestros programas están basados en tres pilares de excelencia que nos ayudan a cumplir cada objetivo: Nuestros profesionales, las rutinas y programas personalizados y nuestro seguimiento constante. </p>
                 </article>
-            </div>
-        </div>
-        <div class="formularioB">
-            <div >
-                <form >
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email </label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text"></div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Recordar datos</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-            </div>
-            <div class="containerCaja">
-                
-                <!-- Button to Open the Modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                Olvido su contraseña?
-                </button>
-            
-                <!-- The Modal -->
-                <div class="modal" id="myModal">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                    
-                            <!-- Modal Header -->
-                            <div class="modal-header">
-                                <h4 class="modal-title">Registro de contraseña</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="formularioB">
+                    <div>
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email </label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text"></div>
                             </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Recordar datos</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="containerCaja">
+                            
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                            Olvido su contraseña?
+                        </button>
                         
-                            <!-- Modal body -->
-                            <div class="modal-body">
-                                Verifique su correo electronico y siga los pasos
+                        <!-- The Modal -->
+                        <div class="modal" id="myModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Registro de contraseña</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                            Verifique su correo electronico y siga los pasos
+                                    </div>
+                                    
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                                
+                                </div>
                             </div>
-                        
-                            <!-- Modal footer -->
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                            </div>
-                    
                         </div>
+                            
                     </div>
-                </div>
-                
-            </div>
-            
 
+            </div>
         </div>
+        <h1 class="titulo-profesor">Nuestros Profesores</h1>
         <div class="containerBox">
-            <div class="caja-1">
-                <h3>Nosotros :</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi velit dolorum nesciunt, recusandae, nihil dolor itaque sit labore saepe corporis illo consectetur aperiam corrupti! Expedita inventore magnam eaque omnis tempora.</p>
+            
+            <div class="caja-profesor"> 
+                <img class="imagen-profesor" src="Imagenes/profesor.jpg" alt="">
+                <h2>Micaela Rodriguez</h2>
+                <h3>26 años - Funcional</h3>
                 
             </div>
-            <div class="container-fluid" class="caja-2">
-                <h3>Nuestros profesores :</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi velit dolorum nesciunt, recusandae, nihil dolor itaque sit labore saepe corporis illo consectetur aperiam corrupti! Expedita inventore magnam eaque omnis tempora.</p>
+            <div class="caja-profesor">
+                <img class="imagen-profesor" src="Imagenes/profesor2.jpg" alt="">
+                <h2>Jorge Espindola</h2>
+                <h3>27 años - Crossfit</h3>
+                
+                
             </div>
-            <div class="caja-3">
-                <h3>Capacitaciones :</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi velit dolorum nesciunt, recusandae, nihil dolor itaque sit labore saepe corporis illo consectetur aperiam corrupti! Expedita inventore magnam eaque omnis tempora.</p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3 class="h2">Clases de Funcional</h3>
-                    <img src="Imagenes/Funcional.jpg" class="img-rounded" alt="funcional" width="304" height="236">
-                    <p>Coordinación, resistencia, agilidad, potencia, flexibilidad, tonificación y sí, también pérdida de peso</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3 class="h2">Clases de Crossfit</h3>
-                    <img src="Imagenes/crossfit2.jpg" class="img-rounded" alt="crossfit" width="304" height="236">
-                    <p>Coordinación, resistencia, agilidad, potencia, flexibilidad, tonificación y sí, también pérdida de peso</p>
-                </div>
+            <div class="caja-profesor">
+                <img class="imagen-profesor" src="Imagenes/profesor3.jpg" alt="">
+                <h2>Joaquin Perez</h2>
+                <h3>33 años - Musculacion</h3>
+                
             </div>
         </div>
+        
         
         
         
