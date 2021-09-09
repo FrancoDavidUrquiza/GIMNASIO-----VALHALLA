@@ -1,13 +1,4 @@
-@for $i from 1 through 3 {
-    .caja-#{$i}{background-color: #EAE0D5;
-        height: 50vh;
-        width: 20vw;
-        border: solid black 1px;
-        background-image: linear-gradient(to left, #22333B, #B27092);
-    }
-        
-    
-}
+
 $color:(
     silverMetallic:#AAACB0,
     liver:#635255,
@@ -18,4 +9,130 @@ $color:(
         background-color: $monscolor
 
     }
+}
+main{
+    background-color:#F7F3F6;
+    font-size: 1.2rem;
+    .cuerpo-inicial{
+        display: grid;
+        justify-content: center;
+        margin-bottom: 20px;
+        .main-grid{
+            display: flex;
+            flex-direction: row;
+            padding-left: 20px;
+            height: 100vh;
+            width: 100vw;
+            background-image: url(../Imagenes/barraCrossfit.jpg);
+            background-size: cover;
+            justify-content: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            .parrafo-inicial{
+                display: grid;
+                height: 400px;
+                width: 300px;
+                margin: auto;
+                align-content: center;
+                z-index: 1;
+                .titulo{
+                    text-align: center;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: 1.8rem;
+                    color: beige;
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                    font-weight: 900;
+                    background: linear-gradient(to left, black, gray);
+                }    
+            }
+            .lead{
+                color: white;
+                font-size: 1.25rem;
+                font-weight: 700;
+                
+            }
+            .formularioB{
+                display: flex;
+                width: max-content;
+                flex-direction: column;
+                display: flex;
+                align-items: flex-start;
+                align-content: center;
+                justify-content: center;
+                margin: auto;
+                border: solid 1px black;
+                padding: 10px;
+                color: black;
+                font-size: 1.8rem;
+                .mb-3{
+                    color: black;
+                    font-size: 18px;
+                    font-weight: 900;
+                }    
+            }    
+            .containerCaja{
+                display: flex;
+                justify-content: flex-start;
+                margin-top: 20px;
+            }    
+            
+        }
+    }
+    .titulo-profesor{
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        margin: auto;
+        font-weight: 900;
+        
+        
+    }
+    .containerBox{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        justify-content: space-around;
+        gap: 50px;
+        margin-top: 100px;
+        text-align: center;
+        align-self: center;
+        font-family: 'Quicksand', sans-serif;
+        color: black;
+        font-size: 20px;
+        justify-self: center;
+        padding: 20px;
+        height: 100vh;
+        width: 100vw;
+        .caja-profesor{
+            border: solid 1px black;
+            height: 70vh;
+            background-color: black;
+            .imagen-profesor{
+                height: 300px;
+                width: 298px;
+                
+            }
+            h2{
+                font-family: 'Hina Mincho', serif;
+                font-weight: 900;
+                color: white;
+                
+            }
+            h3{
+                font-family: 'Hina Mincho', serif;
+                font-weight: 900;
+                color: white;
+
+            }
+            .imagen-profesor__social{
+                height: 40px;
+                width: 40px;
+            }
+
+
+        }    
+        
+    }
+                        
+
 }

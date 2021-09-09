@@ -62,6 +62,132 @@ footer .redSocial .imagenSocial {
   color: black;
 }
 
+/*TABLET*/
+@media only screen and (max-width: 768px) {
+  .main-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .containerBox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+  }
+
+  .titulo {
+    font-size: 20px;
+  }
+
+  .lead {
+    font-size: 20px;
+  }
+
+  .containerBox {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*TABLET*/
+/*CELULAR*/
+@media only screen and (max-width: 1200px) {
+  .cajaUno {
+    font-size: 12px;
+  }
+
+  .cajaTres {
+    font-size: 12px;
+  }
+
+  h3 {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 355px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+  }
+
+  a {
+    font-size: 13px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+  }
+
+  .titulo {
+    font-size: 15px;
+  }
+
+  .formularioB {
+    border: none;
+    font-size: 1rem;
+  }
+
+  .mb-3 {
+    font-size: 15px;
+  }
+
+  .containerBox {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cajaUno {
+    height: 25vh;
+    width: 100vw;
+    border: solid black 3px;
+    background-image: linear-gradient(to left, gray, beige);
+  }
+
+  .cajaTres {
+    height: 25vh;
+    width: 100vw;
+    border: solid black 3px;
+    background-image: linear-gradient(to left, gray, beige);
+  }
+
+  .imagenSocial {
+    height: 25px;
+    width: 25px;
+  }
+
+  .parrafoInicial {
+    font-size: 1px;
+  }
+
+  #mapa {
+    font-size: 10px;
+  }
+}
 /*SECCIONES*/
 .cuerpo-tienda {
   padding: 1px;
@@ -126,30 +252,6 @@ body ol .clases {
   padding: 0px;
 }
 
-.caja-1 {
-  background-color: #EAE0D5;
-  height: 50vh;
-  width: 20vw;
-  border: solid black 1px;
-  background-image: linear-gradient(to left, #22333B, #B27092);
-}
-
-.caja-2 {
-  background-color: #EAE0D5;
-  height: 50vh;
-  width: 20vw;
-  border: solid black 1px;
-  background-image: linear-gradient(to left, #22333B, #B27092);
-}
-
-.caja-3 {
-  background-color: #EAE0D5;
-  height: 50vh;
-  width: 20vw;
-  border: solid black 1px;
-  background-image: linear-gradient(to left, #22333B, #B27092);
-}
-
 .mons--silverMetallic {
   background-color: #AAACB0;
 }
@@ -160,6 +262,121 @@ body ol .clases {
 
 .mons--midnightGreenEagleGreen {
   background-color: #004952;
+}
+
+main {
+  background-color: #F7F3F6;
+  font-size: 1.2rem;
+}
+main .cuerpo-inicial {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+main .cuerpo-inicial .main-grid {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../Imagenes/barraCrossfit.jpg);
+  background-size: cover;
+  justify-content: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+main .cuerpo-inicial .main-grid .parrafo-inicial {
+  display: grid;
+  height: 400px;
+  width: 300px;
+  margin: auto;
+  align-content: center;
+  z-index: 1;
+}
+main .cuerpo-inicial .main-grid .parrafo-inicial .titulo {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.8rem;
+  color: beige;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: 900;
+  background: linear-gradient(to left, black, gray);
+}
+main .cuerpo-inicial .main-grid .lead {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+main .cuerpo-inicial .main-grid .formularioB {
+  display: flex;
+  width: max-content;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  border: solid 1px black;
+  padding: 10px;
+  color: black;
+  font-size: 1.8rem;
+}
+main .cuerpo-inicial .main-grid .formularioB .mb-3 {
+  color: black;
+  font-size: 18px;
+  font-weight: 900;
+}
+main .cuerpo-inicial .main-grid .containerCaja {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+main .titulo-profesor {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  margin: auto;
+  font-weight: 900;
+}
+main .containerBox {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: space-around;
+  gap: 50px;
+  margin-top: 100px;
+  text-align: center;
+  align-self: center;
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  font-size: 20px;
+  justify-self: center;
+  padding: 20px;
+  height: 100vh;
+  width: 100vw;
+}
+main .containerBox .caja-profesor {
+  border: solid 1px black;
+  height: 70vh;
+  background-color: black;
+}
+main .containerBox .caja-profesor .imagen-profesor {
+  height: 300px;
+  width: 298px;
+}
+main .containerBox .caja-profesor h2 {
+  font-family: "Hina Mincho", serif;
+  font-weight: 900;
+  color: white;
+}
+main .containerBox .caja-profesor h3 {
+  font-family: "Hina Mincho", serif;
+  font-weight: 900;
+  color: white;
+}
+main .containerBox .caja-profesor .imagen-profesor__social {
+  height: 40px;
+  width: 40px;
 }
 
 /*# sourceMappingURL=index.css.map */
