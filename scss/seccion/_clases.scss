@@ -9,10 +9,56 @@ body ol{
         list-style:disc;
         list-style-position:outside;
         margin: 0px 0px 0px 50px;
-        padding: 0px
+        padding: 0px;
+        
+
+    }
+    
+    
+}
+.box-clases{
+    display: grid;
+    height: 50vh;
+    width: 100vw;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 53%, rgba(1,68,106,1) 78%, rgba(0,212,255,1) 100%);
+    justify-content: center;
+    align-items: center;
+    
+    h1{
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .imagen-tienda{
+        height: 50vh;
+        width: 50vw;
+        
+    }
+}
+
+    
+
+
+
+.card-body{
+    background-color: black;
+    color: white;
+        
+
+}
+
+div{
+    h5{
+        font-size: 1.80rem;
+        font-weight: 600;
 
     }
 }
+
+
+    
+
 
     
 

@@ -22,7 +22,6 @@ a{
 .submenu{
     position:absolute;
     display: none;
-    background-color:#807182;
     width: 160px;
     height: 240px;
     z-index: 3;

@@ -64,7 +64,7 @@ footer .redSocial .imagenSocial {
 
 /*TABLET*/
 @media only screen and (max-width: 768px) {
-  .main-grid {
+  .header-grid {
     display: flex;
     flex-direction: column;
   }
@@ -189,33 +189,83 @@ footer .redSocial .imagenSocial {
   }
 }
 /*SECCIONES*/
-.cuerpo-tienda {
-  padding: 1px;
+.card-tienda {
+  background: #0f0d32;
+  background: linear-gradient(90deg, #0f0d32 33%, #3a6075 64%, #ddedf0 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.cuerpo-tienda .tiendaFlex {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 1rem;
-  justify-items: center;
-  margin: 1rem;
+.card-tienda section {
+  display: flex;
+  align-items: center;
 }
-.cuerpo-tienda .tiendaFlex .tiendaFlex__imagenTienda {
-  border: 10px solid black;
-  margin: 1rem;
-  height: 150px;
-  width: 200px;
+.card-tienda section h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
 }
-.cuerpo-tienda .tiendaFlex .tiendaFlex__barra:hover {
-  border: solid black 5px;
-  text-align: center;
-  font-family: "Quicksand", sans-serif;
-  color: black;
-  font-size: 1.4rem;
+.card-tienda .card {
+  border: none;
 }
-.cuerpo-tienda .tiendaFlex p {
-  font-size: 1.2rem;
+.card-tienda section {
+  display: flex;
+  align-items: center;
+}
+.card-tienda section h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
 }
 
+.prox-tienda {
+  background: #0f0d32;
+  background: linear-gradient(90deg, #0f0d32 33%, #3a6075 64%, #ddedf0 100%);
+}
+.prox-tienda h1, .prox-tienda h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-tienda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .prox-tienda h1, .prox-tienda h3 {
+    font-size: 1.2rem;
+    font: 300;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 355px) {
+  .card-tienda h3 {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .card-tienda .card {
+    align-items: center;
+    width: 15rem;
+    height: 20rem;
+    background-color: black;
+  }
+  .card-tienda .card .card-img-top {
+    width: 10rem;
+    height: 11rem;
+  }
+  .card-tienda .card .card-body {
+    height: 15rem;
+    width: 10rem;
+  }
+  .card-tienda .card .card-body h5, .card-tienda .card .card-body p, .card-tienda .card .card-body a {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
 .main-contacto #contacto__formulario {
   margin: 0px 400px;
   border: 5px solid white;
@@ -224,6 +274,10 @@ footer .redSocial .imagenSocial {
   align-items: center;
   font-family: "Quicksand", sans-serif;
   background: linear-gradient(to bottom, #3A2449, #C9B7AD);
+}
+.main-contacto .container-xxl {
+  color: white;
+  font-weight: 900;
 }
 .main-contacto .contacto__formulario--titulo {
   text-transform: uppercase;
@@ -237,6 +291,17 @@ footer .redSocial .imagenSocial {
   font-weight: 800;
 }
 
+@media only screen and (max-width: 768px) {
+  .contacto__formulario--titulo {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .contacto__formulario--form {
+    font-size: 1rem;
+    font-weight: 100;
+  }
+}
 body ol {
   padding: 0px 0px 0px 50px;
   margin: 10px;
@@ -252,6 +317,35 @@ body ol .clases {
   padding: 0px;
 }
 
+.box-clases {
+  display: grid;
+  height: 50vh;
+  width: 100vw;
+  background: #020024;
+  background: linear-gradient(90deg, #020024 53%, #01446a 78%, #00d4ff 100%);
+  justify-content: center;
+  align-items: center;
+}
+.box-clases h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.box-clases .imagen-tienda {
+  height: 50vh;
+  width: 50vw;
+}
+
+.card-body {
+  background-color: black;
+  color: white;
+}
+
+div h5 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
 .mons--silverMetallic {
   background-color: #AAACB0;
 }
@@ -262,6 +356,10 @@ body ol .clases {
 
 .mons--midnightGreenEagleGreen {
   background-color: #004952;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
 }
 
 main {
@@ -336,12 +434,17 @@ main .titulo-profesor {
   font-family: "Quicksand", sans-serif;
   text-align: center;
   margin: auto;
+}
+main .titulo-profesor h1 {
   font-weight: 900;
+}
+main .titulo-profesor p {
+  font-weight: 700;
 }
 main .containerBox {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
   justify-content: space-around;
   gap: 50px;
   margin-top: 100px;
@@ -357,12 +460,12 @@ main .containerBox {
 }
 main .containerBox .caja-profesor {
   border: solid 1px black;
-  height: 70vh;
+  height: 90vh;
   background-color: black;
 }
 main .containerBox .caja-profesor .imagen-profesor {
-  height: 300px;
-  width: 298px;
+  height: 70%;
+  width: 100%;
 }
 main .containerBox .caja-profesor h2 {
   font-family: "Hina Mincho", serif;
@@ -377,6 +480,83 @@ main .containerBox .caja-profesor h3 {
 main .containerBox .caja-profesor .imagen-profesor__social {
   height: 40px;
   width: 40px;
+}
+
+.container-clases {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+.container-clases .titulo-clases {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  margin: auto;
+  color: white;
+}
+.container-clases .titulo-clases h1 {
+  font-weight: 900;
+  font-size: 36px;
+}
+.container-clases .titulo-clases p {
+  font-weight: 700;
+  font-size: 16px;
+}
+.container-clases .container-clases__grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  justify-content: space-around;
+  gap: 40px;
+  padding-top: 100px;
+}
+.container-clases .container-clases__grid .cajas-clases {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  width: 10.5rem;
+  color: white;
+  font-weight: 900;
+  font-family: "Abril Fatface", cursive;
+  transition: all 300ms;
+}
+.container-clases .container-clases__grid .cajas-clases .imagen-clase {
+  z-index: 1;
+  height: 10rem;
+  width: 10.5rem;
+}
+.container-clases .container-clases__grid .cajas-clases:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 768px) {
+  .main-grid {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+
+  .titulo-profesor {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .titulo-profesor h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .containerBox {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .container-clases {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

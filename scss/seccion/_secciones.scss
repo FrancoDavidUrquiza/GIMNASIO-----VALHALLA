@@ -10,6 +10,9 @@ $color:(
 
     }
 }
+body{
+    font-family: 'Quicksand', sans-serif;
+}
 main{
     background-color:#F7F3F6;
     font-size: 1.2rem;
@@ -83,14 +86,26 @@ main{
         font-family: 'Quicksand', sans-serif;
         text-align: center;
         margin: auto;
-        font-weight: 900;
         
+        
+        h1{
+            font-weight: 900;
+        }
+        p{
+            font-weight: 700;
+        }
         
     }
+    
+        
+    
+    
+        
+    
     .containerBox{
         display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
         justify-content: space-around;
         gap: 50px;
         margin-top: 100px;
@@ -103,13 +118,15 @@ main{
         padding: 20px;
         height: 100vh;
         width: 100vw;
+        
         .caja-profesor{
             border: solid 1px black;
-            height: 70vh;
+            height: 90vh;
             background-color: black;
+            
             .imagen-profesor{
-                height: 300px;
-                width: 298px;
+                height: 70%;
+                width: 100%;
                 
             }
             h2{
@@ -133,6 +150,97 @@ main{
         }    
         
     }
+    
                         
 
+}
+.container-clases{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    .titulo-clases{
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        margin: auto;
+        color: white;
+
+        
+        
+        h1{
+            font-weight: 900;
+            font-size: 36px;
+        }
+        p{
+            font-weight: 700;
+            font-size: 16px;
+        }
+        
+        
+    }
+    .container-clases__grid{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto; 
+        grid-template-rows: auto auto auto auto auto;
+        justify-content: space-around;
+        gap: 40px;
+        padding-top: 100px;
+        .cajas-clases{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10rem;
+            width: 10.5rem;
+            color: white;
+            font-weight: 900;
+            font-family: 'Abril Fatface', cursive;
+            transition: all 300ms;
+            
+            
+            .imagen-clase{
+                z-index: 1;
+                height: 10rem;
+                width: 10.5rem;
+                
+
+            }
+            
+        }
+        .cajas-clases:hover{
+            transform: scale(1.20);
+        }
+        
+        
+        
+            
+        
+    }
+}
+
+@media only screen and (max-width:768px){
+    .main-grid{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+    .titulo-profesor{
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        h1{
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+    }
+    .containerBox{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+
+        
+    }
+    .container-clases{
+        display: flex;
+        flex-direction: column;
+    }
 }
